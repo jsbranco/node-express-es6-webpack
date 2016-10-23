@@ -1,0 +1,31 @@
+{
+  "name": "sparkles",
+  "version": "1.0.0",
+  "description": "Sparkles backend server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist",
+    "build": "babel server -s -D -d dist --presets es2015,stage-0",
+    "prestart": "npm run -s build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "juniobranco",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "http": "0.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^3.1.1",
+    "json-loader": "^0.5.4",
+    "nodemon": "^1.9.2",
+    "webpack": "^1.13.2"
+  }
+}
